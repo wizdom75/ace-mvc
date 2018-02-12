@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+
+{% block title %} Profile {% endblock %}
+
+
+{% block content %}
+
+<h1> Profile</h1>
+
+<dl class="dl-horizontal">
+    <dt>Name</dt>
+    <dd>{{ user.name }}</dd>
+    <dt>Email</dt>
+    <dd>{{ user.email }}</dd>
+</dl>
+
+<a href="/ace-mvc/public/profile/edit">Edit</a>
+
+
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+
+{% block title %} Posts {% endblock %}
+
+
+{% block content %}
+
+<h1>Posts</h1>
+
+    <ul>
+        {% for post in posts %}
+            <h2>{{ post.title }}</h2>
+
+            <p>{{ post.content }}</p>
+
+        <a href="/ace-mvc/public/posts/{{ post.id }}/singlepost">See more</a>
+        {% endfor %}
+    </ul>
+
+
+{% endblock %}

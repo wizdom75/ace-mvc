@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+
+{% block title %} Home {% endblock %}
+
+
+{% block content %}
+
+
+<h1>Welcome</h1>
+{% if current_user %}
+<p>Hello {{ current_user.name }}!</p>
+{% else %}
+<p>Hello new person!</p>
+
+{% endif %}
+
+
+<ul>
+    {% for colour in colours %}
+
+    <li>{{ colour }}</li>
+
+    {% endfor %}
+</ul>
+
+
+
+{% endblock %}

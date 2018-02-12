@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+
+{% block title %} Log in {% endblock %}
+
+{% block content %}
+
+<h1> Log in </h1>
+
+
+<form method="post" action="/ace-mvc/public/login/create">
+
+    <div class="form-group">
+        <label for="inputEmail">Email</label>
+        <input id="inputEmail" name="email" placeholder="Email address" type="email" required value="{{ email }}" class="form-control"/>
+    </div>
+    <div class="form-group">
+        <label for="inputPassword">Password</label>
+        <input type="password" id="inputPassword" name="password" placeholder="Password" required class="form-control"/>
+    </div>
+    <div class="checkbox">
+        <label>
+            <input type="checkbox" name="remember_me" {% if remember_me %} checked="checked" {% endif %}/> Remember me
+        </label>
+    </div>
+
+    <button type="submit" class="btn btn-default">Log in</button>
+<p></p>
+    <div>
+        <a href="/ace-mvc/public/password/forgot">Forgot password</a>
+    </div>
+
+
+
+
+</form>
+
+{% endblock %}
