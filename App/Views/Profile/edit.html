@@ -5,8 +5,8 @@
 
 
 {% block footer %}
-<script src="/ace-mvc/public/js/hideShowPassword.min.js"></script>
-<script src="/ace-mvc/public/js/app.js"></script>
+<script src="/js/hideShowPassword.min.js"></script>
+<script src="/js/app.js"></script>
 
 <script>
 
@@ -21,7 +21,7 @@
                     required: true,
                     email:true,
                     remote: {
-                        url: '/ace-mvc/public/account/validate-email',
+                        url: '/account/validate-email',
                         data: {
                             ignore_id: function(){
                                 return userId;
@@ -71,7 +71,7 @@
 
 {% endif %}
 
-<form method="post" action="/ace-mvc/public/profile/update" id="formProfile">
+<form method="post" action="/profile/update" id="formProfile">
     <div class="form-group">
         <label for="inputName">Name</label>
         <input id="inputName" name="name" placeholder="Name" value="{{ user.name }}" required class="form-control"/>
@@ -87,7 +87,7 @@
     </div>
 
     <button type="submit" class="btn btn-default">Save</button>
-    <a href="/ace-mvc/public/profile/show">Cancel</a>
+    <a href="/profile/show">Cancel</a>
 
 
 </form>
