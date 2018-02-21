@@ -5,7 +5,7 @@
     <title>{% block title %}{% endblock %}</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="/ace-mvc/public/css/style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
 </head>
 <body>
 
@@ -14,19 +14,19 @@
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <ul class="nav navbar-nav">
-                <a href="/ace-mvc/public">Home</a>
-                <a href="/ace-mvc/public/posts/index">Posts</a>
-                <a href="/ace-mvc/public/items/index">Items</a>
+                <a href="/">Home</a>
+                <a href="/posts/index">Posts</a>
+                <a href="/items/index">Items</a>
 
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 {% if current_user %}
-                <a href="/ace-mvc/public/profile/show">Profile</a>
-                <a href="/ace-mvc/public/logout">Logout</a>
+                <a href="/profile/show">Profile</a>
+                <a href="/logout">Logout</a>
 
                 {% else %}
-                <a href="/ace-mvc/public/signup">Sign up</a>
-                <a href="/ace-mvc/public/login">Login</a>
+                <a href="/signup">Sign up</a>
+                <a href="/login">Login</a>
 
                 {% endif %}
             </ul>
