@@ -5,8 +5,8 @@
 
 
 {% block footer %}
-<script src="/ace-mvc/public/js/hideShowPassword.min.js"></script>
-<script src="/ace-mvc/public/js/app.js"></script>
+<script src="/js/hideShowPassword.min.js"></script>
+<script src="/js/app.js"></script>
 
 <script>
 
@@ -18,7 +18,7 @@
                 email: {
                     required: true,
                     email:true,
-                    remote: '/ace-mvc/public/account/validate-email'
+                    remote: '/account/validate-email'
                 },
                 password:{
                     required:true,
@@ -63,7 +63,7 @@
 
 {% endif %}
 
-<form method="post" action="/ace-mvc/public/signup/create" id="formSignup">
+<form method="post" action="/signup/create" id="formSignup">
 
     <div class="form-group">
         <label for="inputName">Name</label>
