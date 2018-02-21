@@ -5,8 +5,8 @@
 
 
 {% block footer %}
-<script src="/ace-mvc/public/js/hideShowPassword.min.js"></script>
-<script src="/ace-mvc/public/js/app.js"></script>
+<script src="/js/hideShowPassword.min.js"></script>
+<script src="/js/app.js"></script>
 
 <script>
 
@@ -57,7 +57,7 @@
 
 {% endif %}
 
-<form method="post" action="/ace-mvc/public/password/reset-password" id="formPassword">
+<form method="post" action="/password/reset-password" id="formPassword">
 
     <div class="form-group">
         <input type="hidden" name="token" value="{{ token }}"/>
