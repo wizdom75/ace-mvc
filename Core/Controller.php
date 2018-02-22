@@ -95,7 +95,7 @@ abstract class Controller
 
             Auth::rememberRequestedPage();
 
-            $this->redirect('/ace-mvc/public/login');
+            $this->redirect('/login');
         }
     }
 }
