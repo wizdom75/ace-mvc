@@ -55,16 +55,16 @@ class Config
     const SECRET_KEY = 'AeQZ3Oq6bpjUsgXwwc5av9CUALp0PWUC';
 
     /**
-     *  Mailgun API key
+     *  PHPMailer API key
      *
      * @var string
      */
-    const MAILGUN_API_KEY = 'key-79156ea96c3c8b188aa6b8c8288a24a4';
+    const PHPMAILER_API_KEY = 'key-79156ea96c3c8b188aa6b8c8288a24a4';
 
     /**
-     *  Mailgun domain
+     *  PHPMailer domain
      *
      * @var string
      */
-    const MAILGUN_DOMAIN = '';
+    const SMTP_HOST = '';
 }
