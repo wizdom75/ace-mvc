@@ -93,7 +93,7 @@ class Auth
      */
     public static function getReturnToPage()
     {
-        return $_SESSION['return_to'] ?? '/ace-mvc/public'; // default redirect page
+        return $_SESSION['return_to'] ?? '/'; // default redirect page
     }
 
     /**
